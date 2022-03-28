@@ -4,7 +4,7 @@
   "sources": {
     "twitter": {
       "count": 4,
-      "class": "AppImageSourceTwitterFollowerImageSource"
+      "class": "App\\ImageSource\\TwitterFollowerImageSource"
     }
   },
   "elements": {
