@@ -3,8 +3,7 @@
   "height": 500,
   "sources": {
     "twitter": {
-      "count": 4,
-      "class": "App\\ImageSource\\TwitterFollowerImageSource"
+      "count": 4
     }
   },
   "elements": {
