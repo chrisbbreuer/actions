@@ -14,7 +14,7 @@ jobs:
         uses: erikaheidi/dynacover-actions@v4.2
         env:
           # Uncomment and change accordingly to customize your cover
-          DYNA_DEFAULT_TEMPLATE: dynacover.json
+          DYNA_DEFAULT_TEMPLATE: ${{ github.workspace }}/dynacover.json
           # DYNA_TEMPLATES_DIR: ${{ github.workspace }}/dynacover_custom
           # DYNA_IMAGES_DIR: ${{ github.workspace }}/dynacover_custom
           DYNA_TWITTER_KEY: ${{ secrets.DYNA_TWITTER_KEY }}
