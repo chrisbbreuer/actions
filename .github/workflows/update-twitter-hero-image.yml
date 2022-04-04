@@ -1,7 +1,7 @@
 name: Update Twitter Header Image
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0/10 * * * *"
   workflow_dispatch:
 jobs:
   main:
@@ -15,8 +15,8 @@ jobs:
         env:
           # Uncomment and change accordingly to customize your cover
           DYNA_DEFAULT_TEMPLATE: dynacover.json
-          DYNA_TEMPLATES_DIR: ${{ github.workspace }}/dynacover_custom
-          DYNA_IMAGES_DIR: ${{ github.workspace }}/dynacover_custom
+          # DYNA_TEMPLATES_DIR: ${{ github.workspace }}/dynacover_custom
+          # DYNA_IMAGES_DIR: ${{ github.workspace }}/dynacover_custom
           DYNA_TWITTER_KEY: ${{ secrets.DYNA_TWITTER_KEY }}
           DYNA_TWITTER_SECRET: ${{ secrets.DYNA_TWITTER_SECRET }}
           DYNA_TWITTER_TOKEN: ${{ secrets.DYNA_TWITTER_TOKEN }}
